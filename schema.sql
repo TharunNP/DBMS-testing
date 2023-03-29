@@ -1,0 +1,14 @@
+CREATE DATABASE test1;
+USE test1;
+
+CREATE TABLE notes(
+id integer PRIMARY KEY auto_increment,
+TITLE VARCHAR(255) NOT NULL,
+contents TEXT NOT NULL,
+created TIMESTAMP NOT NULL DEFAULT NOW()
+);
+
+INSERT INTO notes(TITLE, contents)
+VALUES
+('DFGHJ','SDFGHJK'),
+('DFGHJKL','SDFHJK');
